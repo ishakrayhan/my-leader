@@ -1,0 +1,119 @@
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Handlee&family=Italianno&family=Montserrat:ital@1&family=Open+Sans:ital@0;1&family=Poppins:wght@500&family=Roboto:wght@400;500;700;900&family=Satisfy&display=swap');  
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #f3f1f3;
+}
+ 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+  
+}
+ .container{
+  width: 870px;
+  background-color: white;
+  margin-top: 10px;
+    
+ }
+
+
+
+
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+   
+
+  
+}
+.player{
+    display: flex;
+   
+    text-align: center;
+}
+.player img{
+    height: 56px;
+    font-weight: 56px;
+}
+.player-name{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.top-players{
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.h2-chl{
+color: blue;
+
+}
+hr{
+    color: dimgray;
+}
+
+ /* blogs secton//  */
+
+
+ .thumbnle{
+    display: flex;
+    
+ }
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog img{
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info{
+    margin-left: 30px;
+}
+.blog-tittle{
+font-size: 16;
+}
+.author a{
+    text-decoration: none;
+    color: blue;
+}
+.author{
+    color: grey;
+}
+/* course starts */
+.course-bannar img{
+    width: 224px;
+    height: 104;
+}
+.fa-star.filled{
+    color: gold;
+}
+.fa-star.empty{
+    color: gray;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:668px){
+    .container{width: 100%;}
+    .players, .blogs, .courses{
+      
+        grid-template-columns: repeat(1, 1fr);
+      
+    }
+    .player, .thumbnle,.courses{
+        flex-direction: column;
+    }
+.blogs, .course{
+    justify-items: center;
+}
+.course, .h2-chl, .section-tittle{text-align: center;}
+}
+
